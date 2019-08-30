@@ -1,27 +1,27 @@
 .video-wrapper {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .video-bt5 {
     border:10pt solid black;
     float:left;
-    margin-left: 2%;
-    margin-top: 2%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .video-bt5-internet {
     border:10pt solid black;
     float:right;
-    margin-top: 2%;
-    margin-right: 2%;
-}
-
-.sopcast {
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
 }
 
 .footer {
+    margin-top: 5%;
     position: fixed;
     left: 0;
     bottom: 0;
