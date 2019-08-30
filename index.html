@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Beerhunters</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Beerhunters Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Vadzim Kavalkou">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/beer-outline.png">
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://fragaly.github.io/beerhunters/" target="_blank">Beerhunters</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="https://www.premierleague.com/fixtures" target="_blank">EPL Schedule</a></li>
+                <li><a href="https://fantasy.premierleague.com/statistics" target="_blank">Fantasy Statistics</a></li>
+                <li><a href="https://fantasy.premierleague.com/my-team" target="_blank">My Team</a></li>
+                <li><a href="https://fantasy.premierleague.com/leagues/82520/standings/c" target="_blank">Beerhunbers</a></li>
+                <li><a href="https://fantasy.premierleague.com/leagues/82530/standings/h" target="_blank">Beerhunters H2H</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="video-wrapper">
+        <div class="video-bt5">
+            <video id='hls-bt5' class="video-js vjs-default-skin" width="720%" height="360%" controls>
+                <source type="application/x-mpegURL" src="https://stream.hoster.by/belarus5/liveabr/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8zMC8yMDE5IDEwOjAxOjEzIEFNJmhhc2hfdmFsdWU9Z3p0QThZeVdYMWtkM2JHbCsxSUErUT09JnZhbGlkbWludXRlcz0xMjA=">
+            </video>
+        </div>
+        <div class="video-bt5-internet">
+            <video id='hls-bt5-internet' class="video-js vjs-default-skin" width="720%" height="360%" controls>
+                <source type="application/x-mpegURL" src="https://stream.hoster.by/b5/b5/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8zMC8yMDE5IDEwOjIxOjIxIEFNJmhhc2hfdmFsdWU9bWV5VzV3ZU5FOFlBdEo5cUF5a3haZz09JnZhbGlkbWludXRlcz0xMjA=">
+            </video>
+        </div>
+    </div>
+</div>
+
+<div style="clear:both" class="footer">
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <a href="https://by.linkedin.com/in/vadzimkavalkou">
+                <img src="images/ln-logo.png" style="width:82px; height:86px" title="Vadzim Kavalkou" alt="VK">
+            </a>
+        </li>
+    </ul>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://github.com/fragaLY/beerhunters">Beerhunters</a>
+    </div>
+</div>
+
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+<script>
+    var player1 = videojs('hls-bt5');
+    var player2 = videojs('hls-bt5-internet');
+    player1.play();
+    player2.play();
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.video-wrapper {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.video-bt5 {
+    float:left;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.video-bt5-internet {
+    float:right;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
