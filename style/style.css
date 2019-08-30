@@ -4,13 +4,14 @@
 }
 
 .video-bt5 {
+    border:10pt solid black;
     float:left;
-    width: 50%;
     margin-left: 2%;
     margin-top: 2%;
 }
 
 .video-bt5-internet {
+    border:10pt solid black;
     float:right;
     margin-top: 2%;
     margin-right: 2%;
