@@ -76,13 +76,18 @@
             </iframe>
             <p>
             <h3 class="display-4">Ace Stream</h3>
-            <div class="input-group-prepend mt-5" id="ace-stream-player"></div>
+            <div class="input-group-prepend">
+                <div id="ace-stream-player"></div>
+            </div>
             <div class="input-group">
+                <div class="input-group-prepend">
+                    <label for="contentId"> Content Id</label>
+                    <input type="text" class="form-control" id="contentId" aria-describedby="group-id"
+                           placeholder="Content Id" onclick="acestream()">
+                </div>
                 <div class="input-group-prepend">
                     <button class="btn btn-primary" type="button" onclick="acestream()">Stream</button>
                 </div>
-                <input type="text" id="contentId" class="form-control" placeholder="Enter content id" aria-label=""
-                       aria-describedby="basic-addon1">
             </div>
             </p>
         </div>
