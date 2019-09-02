@@ -114,12 +114,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
 <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
-<script>
-    var player1 = videojs('hls-bt5');
-    var player2 = videojs('hls-bt5-internet');
-    player1.play();
-    player2.play();
-</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -133,14 +127,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="//static.acestream.net/jsapi/acestream.min.js"></script>
-<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script>
+    videojs('hls-bt5');
+    videojs('hls-bt5-internet');
+</script>
 <script type="text/javascript">
-    var options = {
+    new Twitch.Player("twitch", options = {
         channel: "zepp60",
         playsinline: true
-        };
-    var player = new Twitch.Player("twitch", options);
-    player.setVolume(1);
+    }).setVolume(1);
 </script>
 </body>
 </html>
