@@ -1,4 +1,6 @@
-function acestream(contentId) {
+function acestream() {
+    let contentId = $('#contentId').val();
+
     let player = null;
     AceStream.createPlayer("#ace-stream-player", {
         onLoad: function (playerObj) {
