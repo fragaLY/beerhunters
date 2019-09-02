@@ -11,6 +11,7 @@
     <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/beer-outline.png">
     <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
     <script src="script/capture.js"></script>
+    <script src="script/ace-stream.js"></script>
 </head>
 
 <body onload="capture()">
@@ -59,6 +60,17 @@
                 <iframe src="http://www.sopcast.com/channel/getch.html?groupId=1&channelId=6001,6002,6543" name="sopchannel" width="400" height="50" scrolling="No" frameborder="0" id="sopchannel">The browder doesn't support iframe.</iframe>
             </div>
             </p>
+            <p>
+            <h3 class="display-4">Ace Stream</h3>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" onclick="acestream()">Stream</button>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+            <div class="float-left" id="ace-stream-player">
+            </div>
+            </p>
         </div>
     </div>
 </main>
@@ -101,5 +113,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="//static.acestream.net/jsapi/acestream.min.js"></script>
 </body>
 </html>
