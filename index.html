@@ -11,6 +11,7 @@
     <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/beer-outline.png">
     <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
     <script src="script/capture.js"></script>
+    <script src="script/sopcast.js"></script>
     <script src="script/ace-stream.js"></script>
 </head>
 
@@ -38,7 +39,7 @@
 
 <main role="main" class="container">
     <div>
-        <div class="col-xs-8">
+        <div class="col-xs-6">
             <h3 class="display-4">BT5 Stream</h3>
             <div>
                 <video id='hls-bt5' class="video-js vjs-default-skin" controls>
@@ -71,22 +72,19 @@
             </div>
             <iframe src="http://www.sopcast.com/channel/getch.html?groupId=1&channelId=6001,6002,6543"
                     name="sopchannel"
-                    id="sopchannel" hidden>The browder doesn't support iframe.
+                    id="sopchannel" width="100%" height="100%" hidden>The browder doesn't support iframe.
             </iframe>
             <p>
             <h3 class="display-4">Ace Stream</h3>
-            <form>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-primary" type="button" onclick="acestream()">Stream</button>
-                    </div>
-                    <input type="text" id="contentId" class="form-control" placeholder="Enter content id" aria-label=""
-                           aria-describedby="basic-addon1">
+            <div class="input-group-prepend mt-5" id="ace-stream-player"></div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary" type="button" onclick="acestream()">Stream</button>
                 </div>
-                <div class="float-left" id="ace-stream-player">
-                </div>
-                </p>
-            </form>
+                <input type="text" id="contentId" class="form-control" placeholder="Enter content id" aria-label=""
+                       aria-describedby="basic-addon1">
+            </div>
+            </p>
         </div>
     </div>
 </main>
