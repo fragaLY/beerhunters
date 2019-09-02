@@ -58,24 +58,20 @@
             <h3 class="display-4">Twitch by zepp60</h3>
             <div id="twitch"></div>
             </p>
-            <p>
             <h3 class="display-4">Sopcast Stream</h3>
-            <form>
-                <div class="form-group">
-                    <label for="groupId">Group Id</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <label>Group Id & Channel Id</label>
                     <input type="text" class="form-control" id="groupId" aria-describedby="group-id"
-                           placeholder="Enter group id">
-                </div>
-                <div class="form-group">
-                    <label for="channelId">Channel Id</label>
-                    <input type="text" class="form-control" id="channelId" placeholder="Enter channel id">
+                           placeholder="Group Id">
+                    <input type="text" class="form-control" id="channelId" placeholder="Channel Id">
                 </div>
                 <button type="submit" class="btn btn-primary" onclick="sopcast()">Stream</button>
-            </form>
-            <iframe src="http://www.sopcast.com/channel/getch.html?groupId=1&channelId=6001,6002,6543" name="sopchannel"
-                    id="sopchannel">The browder doesn't support iframe.
+            </div>
+            <iframe src="http://www.sopcast.com/channel/getch.html?groupId=1&channelId=6001,6002,6543"
+                    name="sopchannel"
+                    id="sopchannel" hidden>The browder doesn't support iframe.
             </iframe>
-            </p>
             <p>
             <h3 class="display-4">Ace Stream</h3>
             <form>
