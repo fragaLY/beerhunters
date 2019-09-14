@@ -1,0 +1,11 @@
+footer {
+  position: relative;
+  height: auto;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  margin-bottom: 1%;
+  position: relative;
+}
