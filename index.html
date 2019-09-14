@@ -2,84 +2,90 @@
 <html lang="en">
 
 <head>
-    <title>Beerhunters</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Beerhunters Page">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Vadzim Kavalkou">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/beer-outline.png">
-    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
-    <script src="script/capture.js"></script>
+  <title>Beerhunters</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Beerhunters Page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Vadzim Kavalkou">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/beer-outline.png">
+  <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+  <script src="script/capture.js"></script>
 </head>
 
 <body>
 
 <header>
-    <nav class="navbar navbar-dark navbar-expand-lg navbar-inverse" style="background-color: black; border-radius: 0">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="https://fragaly.github.io/beerhunters/" target="_blank">Beerhunters</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="https://www.premierleague.com/fixtures" target="_blank">EPL Schedule</a></li>
-                <li><a href="https://fantasy.premierleague.com/statistics" target="_blank">Fantasy Statistics</a></li>
-                <li><a href="https://fantasy.premierleague.com/my-team" target="_blank">My Team</a></li>
-                <li><a href="https://fantasy.premierleague.com/leagues/82520/standings/c"
-                       target="_blank">Beerhunbers</a></li>
-                <li><a href="https://fantasy.premierleague.com/leagues/82530/standings/h" target="_blank">Beerhunters
-                    H2H</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-inverse"
+       style="background-color: black; border-radius: 0">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://fragaly.github.io/beerhunters/" target="_blank">Beerhunters</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="https://www.premierleague.com/fixtures" target="_blank">EPL Schedule</a></li>
+        <li><a href="https://fantasy.premierleague.com/statistics" target="_blank">Fantasy
+          Statistics</a></li>
+        <li><a href="https://fantasy.premierleague.com/my-team" target="_blank">My Team</a></li>
+        <li><a href="https://fantasy.premierleague.com/leagues/82520/standings/c"
+               target="_blank">Beerhunbers</a></li>
+        <li><a href="https://fantasy.premierleague.com/leagues/82530/standings/h" target="_blank">Beerhunters
+          H2H</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 <main role="main" class="container">
-    <div>
-        <div class="col-xs-6">
-            <h3 class="display-4">BT5 Stream</h3>
-            <div>
-                <video id='hls-bt5' class="video-js vjs-default-skin" controls>
-                    <source type="application/x-mpegURL"
-                            src="https://stream.hoster.by/belarus5/liveabr/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8xNC8yMDE5IDk6MzI6NTggQU0maGFzaF92YWx1ZT1OeHNFKzNTMjNZN3lNN015U1NEUm53PT0mdmFsaWRtaW51dGVzPTEyMA==">
-                </video>
-            </div>
-            <p>
-            <h3 class="display-4">BT5 Internet Stream</h3>
-            <div>
-                <video id='hls-bt5-internet' class="video-js vjs-default-skin" controls>
-                    <source type="application/x-mpegURL"
-                            src="https://stream.hoster.by/b5/b5/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8xNC8yMDE5IDk6MzQ6MDEgQU0maGFzaF92YWx1ZT00bVlsLzFuUGtTTnd3MG94a1hqeldBPT0mdmFsaWRtaW51dGVzPTEyMA==">
-                </video>
-            </div>
-            </p>
-            <p>
-            <h3 class="display-4">Twitch by zepp60</h3>
-            <div id="twitch"></div>
-            </p>
-        </div>
+  <div>
+    <div class="col-xs-6">
+      <h3 class="display-4">BT5 Stream</h3>
+      <div>
+        <video id='hls-bt5' class="video-js vjs-default-skin" controls>
+          <source type="application/x-mpegURL"
+                  src="https://stream.hoster.by/belarus5/liveabr/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8xNC8yMDE5IDk6MzI6NTggQU0maGFzaF92YWx1ZT1OeHNFKzNTMjNZN3lNN015U1NEUm53PT0mdmFsaWRtaW51dGVzPTEyMA==">
+        </video>
+      </div>
+      <p>
+      <h3 class="display-4">BT5 Internet Stream</h3>
+      <div>
+        <video id='hls-bt5-internet' class="video-js vjs-default-skin" controls>
+          <source type="application/x-mpegURL"
+                  src="https://stream.hoster.by/b5/b5/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8xNC8yMDE5IDk6MzQ6MDEgQU0maGFzaF92YWx1ZT00bVlsLzFuUGtTTnd3MG94a1hqeldBPT0mdmFsaWRtaW51dGVzPTEyMA==">
+        </video>
+      </div>
+      </p>
+      <p>
+      <h3 class="display-4">Twitch by zepp60</h3>
+      <div id="twitch"></div>
+      </p>
     </div>
+  </div>
 </main>
 
 <footer class="fixed-bottom page-footer font-small" style="background-color: black">
-    <ul class="list-inline text-center">
-        <li class="list-inline-item">
-            <a href="https://by.linkedin.com/in/vadzimkavalkou" target="_blank">
-                <img src="images/ln-logo.png" style="width:75px; height:75px" title="Vadzim Kavalkou" alt="VK">
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/dmitry-romankov-72b246135/" target="_blank">
-                <img src="images/ln-logo.png" style="width:75px; height:75px" title="Dzmitry Ramankou" alt="DR">
-            </a>
-        </li>
-    </ul>
-    <div class="footer-copyright text-center">© 2019 Copyright:
-        <a href="https://github.com/fragaLY/beerhunters">Beerhunters</a>
-    </div>
+  <ul class="list-inline text-center">
+    <li class="list-inline-item">
+      <a href="https://by.linkedin.com/in/vadzimkavalkou" target="_blank">
+        <img src="images/ln-logo.png" style="width:75px; height:75px" title="Vadzim Kavalkou"
+             alt="VK">
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.linkedin.com/in/dmitry-romankov-72b246135/" target="_blank">
+        <img src="images/ln-logo.png" style="width:75px; height:75px" title="Dzmitry Ramankou"
+             alt="DR">
+      </a>
+    </li>
+  </ul>
+  <div class="footer-copyright text-center">© 2019 Copyright:
+    <a href="https://github.com/fragaLY/beerhunters">Beerhunters</a>
+  </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
 <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -95,19 +101,18 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 <script>
-    videojs('hls-bt5');
-    videojs('hls-bt5-internet');
+  videojs('hls-bt5');
+  videojs('hls-bt5-internet');
 </script>
 <script type="text/javascript">
-    new Twitch.Player("twitch", options = {
-        channel: "zepp60",
-        autoplay: false,
-        width: '100%',
-        height: '100%',
-        muted: true,
-        preload: 'metadata',
-        // scrolling: true
-    }).setVolume(1);
+  new Twitch.Player("twitch", options = {
+    channel: "zepp60",
+    autoplay: false,
+    width: 'auto',
+    height: 'auto',
+    muted: true,
+    preload: 'metadata'
+  }).setVolume(1);
 </script>
 </body>
 </html>
